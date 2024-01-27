@@ -1,0 +1,14 @@
+    # if stud_score >= 0.99 and stud_score <= 0.99:
+    #     print('Fail')
+    # elif stud_score >= 1.00 and stud_score <= 1.49:
+    #     print('Pass')
+    # elif stud_score >= 1.50 and stud_score <= 2.39:
+    #     print('3rd Class')
+    # elif stud_score >= 2.40 and stud_score <= 3.49:
+    #     print('2nd Class Lower')
+    # elif stud_score >= 3.50 and stud_score <= 4.49:
+    #     print('2nd Class Upper')
+    # elif stud_score >= 4.50 and stud_score <= 5.00:
+    #     print('1st Class')
+    # else:
+    #     print('GPA does not exceed 5.00')
