@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Input(props){
+function Input(input){
     return(
         <div className="container">
-            <input type={props.type} placeholder={props.placeholder} id={props.id} />
+            <input type={input.type} placeholder={input.placeholder} id={input.id} />
         </div>
     )
 }

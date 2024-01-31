@@ -1,18 +1,26 @@
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
+    color: #ffffff;
 }
 body {
     background-color: #181717;
 }
 .container {
     position: absolute;
-    top: 25%;
+    top: 5%;
     width: 100%;
-    padding: 10px 25px;
+    padding: 10px 35%;
 }
 
 .content {
     position: relative;
+    height: 450px;
+    border-radius: 35px;
     background-color: aqua;
+}
+
+.nav-bar {
+    background-color: blue;
+    padding: 5px 10px;
 }
