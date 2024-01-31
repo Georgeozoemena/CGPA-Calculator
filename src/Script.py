@@ -30,25 +30,37 @@ async def departments():
     """)
 
 # Conditional statement of User's Grade and score
-def Students_Score():  
+def Students_Grade():
     if stud_score >= 0 and stud_score <= 39:
-        return 'F'
+        grade_point = 0
+        return f'Grade point: {grade_point}\nGrade: F'
+
     elif stud_score >= 40 and stud_score <= 44:
-        return 'E'
+        grade_point = 1
+        return f'Grade point: {grade_point}\nGrade: E'
+    
     elif stud_score >= 45 and stud_score <= 49:
-        return 'D'
+        grade_point = 2
+        return f'Grade point: {grade_point}\nGrade: D'
+    
     elif stud_score >= 50 and stud_score <= 59:
-        return 'C'
+        grade_point = 3
+        return f'Grade point: {grade_point}\nGrade: C'
+    
     elif stud_score >= 60 and stud_score <= 69:
-        return 'B'
+        grade_point = 4
+        return f'Grade point: {grade_point}\nGrade: B'
+    
     elif stud_score >= 70 and stud_score <= 100:
-        return 'A'
+        grade_point = 5
+        return f'Grade point: {grade_point}\nGrade: A'
+    
     else:
         print("Grades can't exceed 100")
 
 # Calculate the Quality Point(QP) of the user
-def selectedCourse():
-    return creditload * stud_score
+def quality_point():
+    return f'Your Quality Point: {creditload * stud_score}'
 
 
 # Requiring Bio from user
@@ -99,8 +111,8 @@ if stud_dept == 1:
             print(f'***{course}***\nCredit Unit: {creditload}')
 
             # Script to calculate Quality Point
-            GPA = selectedCourse()
-            print(f'\nYour scores is: {stud_score}\nYour Grade: {Students_Score()}\nYour GPA is: {GPA}\n')
+            GPA = quality_point()
+            print(f'\n{stud_score}\n{Students_Grade()}\nYour GPA is: {GPA}\n')
 
 else:
     print('Error___________End.')
