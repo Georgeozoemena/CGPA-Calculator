@@ -1,4 +1,6 @@
 import asyncio
+import math
+
 
 # Menu List of Architecture Year2 courses, if chosen by the user
 def Year2():
@@ -31,6 +33,7 @@ async def departments():
 
 # Conditional statement of User's Grade and score
 def Students_Grade():
+    grade_point = None
     if stud_score >= 0 and stud_score <= 39:
         grade_point = 0
         return f'Grade point: {grade_point}\nGrade: F'
@@ -58,9 +61,11 @@ def Students_Grade():
     else:
         print("Grades can't exceed 100")
 
-# Calculate the Quality Point(QP) of the user
-def quality_point():
-    return f'Your Quality Point: {creditload * stud_score}'
+def quality_point(): 
+    GP = stud_score * creditload
+    return GP
+
+
 
 
 # Requiring Bio from user

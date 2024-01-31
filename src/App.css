@@ -1,7 +1,6 @@
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
-    color: #ffffff;
 }
 body {
     background-color: #181717;
@@ -21,6 +20,46 @@ body {
 }
 
 .nav-bar {
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
     background-color: blue;
     padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.input-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+.input-content {
+    margin: 0 50px;
+}
+
+.inputs {
+    background-color: burlywood;
+    padding: 5px 0px;
+}
+
+.input input{
+    padding: 8px 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: #000fff;
 }
